@@ -104,17 +104,47 @@ new ScrollMagic.Scene({
 $(".to-projects").on("click", (e) => {
     e.preventDefault();
     $("section.projects")[0].scrollIntoView();
-    $(this).addClass("active");
 });
 
 $(".to-about").on("click", (e) => {
     e.preventDefault();
     $("section.about")[0].scrollIntoView();
-    $(this).addClass("active");
 });
 
 $(".to-contact").on("click", (e) => {
     e.preventDefault();
     $("section.footer")[0].scrollIntoView();
-    $(this).addClass("active");
 });
+
+// Side Navigation
+
+const sideNavTL = gsap.timeline();
+
+sideNavTL
+    .from($(".side-nav").find("li"), {
+        y: -10,
+        autoAlpha: 0,
+        stagger: 0.04,
+        duration: 0.5,
+        ease: "back.out(0.8)",
+    })
+    .to(
+        $(".top-nav").find("li"),
+        {
+            y: -10,
+            stagger: 0.04,
+            duration: 0.5,
+            autoAlpha: 0,
+            ease: "expo.inOut",
+        },
+        "-=0.75"
+    );
+
+new ScrollMagic.Scene({
+    triggerElement: ".header",
+    duration: 0,
+    offset: 20,
+    triggerHook: 0,
+})
+    .setTween(sideNavTL)
+    .addTo(controller);
