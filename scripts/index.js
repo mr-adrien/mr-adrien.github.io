@@ -1,5 +1,41 @@
 gsap.registerPlugin(ScrollTrigger);
 
+$(window).on("load", () => {
+    // Header Timeline
+    const headerTL = gsap.timeline();
+    headerTL
+        .to($("#logo-loader"), {
+            duration: 0.6,
+            rotate: "50deg",
+            yPercent: 200,
+            ease: "expo.in",
+        })
+        .to(
+            $("#preloader"),
+            { duration: 0.8, yPercent: 100, ease: "expo.in" },
+            "-=0.4"
+        )
+        .from($(".header").find(".greeting"), {
+            duration: 0.8,
+            yPercent: 100,
+            ease: "expo.out",
+        })
+        .from(
+            $(".header").find(".name"),
+            { duration: 0.8, yPercent: 120, ease: "expo.out" },
+            "-=0.6"
+        )
+        .from(
+            $(".header").find(".intro"),
+            { duration: 0.8, autoAlpha: 0, yPercent: 60, ease: "expo.out" },
+            "-=0.4"
+        )
+        .from(
+            $(".top-nav"),
+            { duration: 1, autoAlpha: 0, yPercent: 10, ease: "expo.out" },
+            "-=0.6"
+        );
+});
 // Create Navigation
 $("nav").append(`
 <ul>
@@ -47,41 +83,6 @@ ScrollTrigger.create({
             : navFloatAnimation.reverse();
     },
 });
-
-// Header Timeline
-const headerTL = gsap.timeline();
-headerTL
-    .to($("#logo-loader"), {
-        duration: 0.6,
-        rotate: "50deg",
-        yPercent: 200,
-        ease: "expo.in",
-    })
-    .to(
-        $("#preloader"),
-        { duration: 0.8, yPercent: 100, ease: "expo.in" },
-        "-=0.4"
-    )
-    .from($(".header").find(".greeting"), {
-        duration: 0.8,
-        yPercent: 100,
-        ease: "expo.out",
-    })
-    .from(
-        $(".header").find(".name"),
-        { duration: 0.8, yPercent: 120, ease: "expo.out" },
-        "-=0.6"
-    )
-    .from(
-        $(".header").find(".intro"),
-        { duration: 0.8, autoAlpha: 0, yPercent: 60, ease: "expo.out" },
-        "-=0.4"
-    )
-    .from(
-        $(".top-nav"),
-        { duration: 1, autoAlpha: 0, yPercent: 10, ease: "expo.out" },
-        "-=0.6"
-    );
 
 // Navigation
 
