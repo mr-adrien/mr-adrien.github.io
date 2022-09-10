@@ -1,0 +1,7 @@
+.projects {
+    background-color: rgb(240, 240, 240);
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
