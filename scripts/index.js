@@ -96,6 +96,13 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 new ScrollMagic.Scene({
+    triggerElement: "section.projects",
+    duration: $("section.projects").height(),
+})
+    .setClassToggle(".to-projects", "active")
+    .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: "section.footer",
     duration: $("section.footer").height(),
 })
