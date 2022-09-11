@@ -4,17 +4,17 @@ $(window).on("load", () => {
     // Header Timeline
     const headerTL = gsap.timeline();
     headerTL
-        .to($("#logo-loader"), {
-            duration: 0.6,
-            rotate: "50deg",
-            yPercent: 200,
-            ease: "expo.in",
-        })
-        .to(
-            $("#preloader"),
-            { duration: 0.8, yPercent: 100, ease: "expo.in" },
-            "-=0.4"
-        )
+        // .to($("#logo-loader"), {
+        //     duration: 0.6,
+        //     rotate: "50deg",
+        //     yPercent: 200,
+        //     ease: "expo.in",
+        // })
+        // .to(
+        //     $("#preloader"),
+        //     { duration: 0.8, yPercent: 100, ease: "expo.in" },
+        //     "-=0.4"
+        // )
         .from($(".header").find(".greeting"), {
             duration: 0.8,
             yPercent: 100,
@@ -36,6 +36,7 @@ $(window).on("load", () => {
             "-=0.6"
         );
 });
+
 // Create Navigation
 $("nav").append(`
 <ul>
