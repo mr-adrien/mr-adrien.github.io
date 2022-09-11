@@ -45,7 +45,7 @@ $(window).on("load", () => {
 	<li>
 		<button
 			title="Download Resume"
-			onclick="location.href='https://drive.google.com/uc?export=download&id=1ITjuDbBKSQA4N25vF8HNxWxBMT3ct68c';"
+			onclick="location.href='https://bit.ly/anshul-bansal-resume';"
 		>
 			<img
 				src="./img/download.svg"
