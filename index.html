@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google tag (gtag.js) -->
         <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-VQ11EGN2NN"
@@ -12,7 +11,6 @@
                 dataLayer.push(arguments);
             }
             gtag("js", new Date());
-
             gtag("config", "G-VQ11EGN2NN");
         </script>
 
@@ -60,50 +58,19 @@
     <body>
         <div id="preloader">
             <div id="loader-container">
-                <svg
-                    id="logo-loader"
-                    width="89"
-                    height="51"
-                    viewBox="0 0 89 51"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M4.88526 48.5L30 5L55.1147 48.5H4.88526Z"
-                        fill="none"
-                        stroke="#fff"
-                        stroke-width="5"
-                    />
-                    <path
-                        d="M74.3301 47.5C72.4056 50.8333 67.5944 50.8333 65.6699 47.5L51.8135 23.5C49.889 20.1667 52.2946 16 56.1436 16L83.8564 16C87.7054 16 90.111 20.1667 88.1865 23.5L74.3301 47.5Z"
-                        fill="#fff"
-                    />
-                </svg>
+                <img src="./img/logo.svg" id="logo-loader" />
             </div>
         </div>
 
         <div class="navigation">
             <div class="top-nav container">
                 <div class="logo-container">
-                    <svg
+                    <img
+                        src="./img/logo.svg"
+                        alt="Anshul Bansal"
                         class="logo"
-                        width="89"
-                        height="51"
-                        viewBox="0 0 89 51"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M4.88526 48.5L30 5L55.1147 48.5H4.88526Z"
-                            fill="none"
-                            stroke="#000"
-                            stroke-width="5"
-                        />
-                        <path
-                            d="M74.3301 47.5C72.4056 50.8333 67.5944 50.8333 65.6699 47.5L51.8135 23.5C49.889 20.1667 52.2946 16 56.1436 16L83.8564 16C87.7054 16 90.111 20.1667 88.1865 23.5L74.3301 47.5Z"
-                            fill="#555"
-                        />
-                    </svg>
+                        draggable="false"
+                    />
                 </div>
 
                 <nav></nav>
@@ -137,9 +104,88 @@
         <section class="projects">
             <div>
                 <h5 class="heading-title">&#8212; Some of my</h5>
-                <h3 class="section-heading">Featured Projects</h3>
+                <h3 class="section-heading">Featured Works</h3>
             </div>
-            <div class="project"></div>
+            <div class="projects-listing">
+                <div class="project">
+                    <div class="project-meta">
+                        <h4 class="project-title">Scribbly</h4>
+                        <p class="project-description">
+                            Multiplayer pictionary game with scalable
+                            event-driven backend using Redis and Websockets.
+                        </p>
+                        <p class="project-technologies">
+                            React / Node.js / Redis / WebSockets
+                        </p>
+                    </div>
+                    <div class="project-cover"></div>
+                </div>
+
+                <div class="project">
+                    <div class="project-meta">
+                        <h4 class="project-title">Parkour</h4>
+                        <p class="project-description">
+                            React app to easily create and share diet/workout
+                            plans. Designed using Figma, with a Node.js backend.
+                        </p>
+                        <p class="project-technologies">
+                            React / Express.js / MongoDB / Puppeteer
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-meta">
+                        <h4 class="project-title">Eating.Social</h4>
+                        <p class="project-description">
+                            Redesign of a social dining company's landing page
+                            with a modern and sleek look.
+                        </p>
+                        <p class="project-technologies">Figma</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-meta">
+                        <h4 class="project-title">TERA</h4>
+                        <p class="project-description">
+                            Autonomous Raspberry Pi based robot car.
+                        </p>
+                        <p class="project-technologies">
+                            Python / Flask / Sockets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-meta">
+                        <h4 class="project-title">Skywatch</h4>
+                        <p class="project-description">
+                            A weather app that doesn't ask for your location.
+                            Auto detects the location using IP address and shows
+                            what sky is upto.
+                        </p>
+                        <p class="project-technologies">
+                            Flask / Redis / HTML / CSS
+                        </p>
+                    </div>
+                    <div class="project-cover">
+                        <img src="./img/clouds.png" />
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-meta">
+                        <h4 class="project-title">Kai Foods</h4>
+                        <p class="project-description">
+                            Website design rework for a dog food company.
+                        </p>
+                        <p class="project-technologies">
+                            HTML / CSS / Javascript
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="about">
@@ -227,24 +273,26 @@
                         <ul class="tags">
                             <li class="tag">Python</li>
                             <li class="tag">JavaScript</li>
-                            <li class="tag">C++ / Java</li>
+                            <li class="tag">C Lang</li>
+                            <li class="tag">Java</li>
                             <li class="tag">HTML5</li>
                             <li class="tag">CSS3</li>
-                            <li class="tag">React.js</li>
+                            <li class="tag">React</li>
                             <li class="tag">Node.js</li>
-                            <li class="tag">Express.js</li>
+                            <li class="tag">Express</li>
                             <li class="tag">Django</li>
                             <li class="tag">Redis</li>
                             <li class="tag">PostgreSQL</li>
                             <li class="tag">MongoDB</li>
                             <li class="tag">Linux/Unix</li>
                             <li class="tag">Wireshark</li>
+                            <li class="tag">Burp Suite</li>
                             <li class="tag">Figma</li>
                             <li class="tag">Docker</li>
-                            <li class="tag">Git</li>
                             <li class="tag">REST APIs</li>
                             <li class="tag">GraphQL</li>
                             <li class="tag">Network Administration</li>
+                            <li class="tag">SDLC</li>
                             <li class="tag">Microservices</li>
                             <li class="tag">Object Oriented Programming</li>
                         </ul>
@@ -257,25 +305,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <svg
-                            class="logo"
-                            width="89"
-                            height="51"
-                            viewBox="0 0 89 51"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M4.88526 48.5L30 5L55.1147 48.5H4.88526Z"
-                                fill="none"
-                                stroke="#ddd"
-                                stroke-width="5"
-                            />
-                            <path
-                                d="M74.3301 47.5C72.4056 50.8333 67.5944 50.8333 65.6699 47.5L51.8135 23.5C49.889 20.1667 52.2946 16 56.1436 16L83.8564 16C87.7054 16 90.111 20.1667 88.1865 23.5L74.3301 47.5Z"
-                                fill="#aaa"
-                            />
-                        </svg>
+                        <img src="./img/logo.svg" class="logo" />
                         <h3 class="footer-text">
                             I'm glad to see you here and even more excited that
                             you looked through my work.

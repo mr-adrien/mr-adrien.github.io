@@ -45,11 +45,12 @@ $(window).on("load", () => {
 	<li>
 		<button
 			title="Download Resume"
-			onclick="location.href='https://bit.ly/anshul-bansal-resume';"
+			onclick="location.href='https://drive.google.com/uc?export=download&id=1EYnwdPMQR36tRt4MlK06fzoQU8c9C8tG';"
 		>
 			<img
-				src="./img/download.svg"
+				src="./img/resume.svg"
 				alt="Download Resume"
+                title="Resume"
 			/>
 		</button>
 	</li>
